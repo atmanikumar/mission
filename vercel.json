@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/thirukkural",
+      "destination": "https://tirukkural.vercel.app/"
+    },
+    {
+      "source": "/thirukkural/:path*",
+      "destination": "https://tirukkural.vercel.app/:path*"
+    },
+    {
+      "source": "/free-qr-code-generator",
+      "destination": "https://free-qr-code-generator-app.vercel.app/"
+    },
+    {
+      "source": "/free-qr-code-generator/:path*",
+      "destination": "https://free-qr-code-generator-app.vercel.app/:path*"
+    }
+  ]
+}

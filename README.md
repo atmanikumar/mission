@@ -19,3 +19,14 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## Path forwarding (Vercel)
+
+Configured in `vercel.json` as external rewrites:
+
+| Path | Destination |
+|------|-------------|
+| `/thirukkural` | https://tirukkural.vercel.app/ |
+| `/free-qr-code-generator` | https://free-qr-code-generator-app.vercel.app/ |
+
+Subpaths under each prefix are forwarded as well.
