@@ -16,10 +16,6 @@
     {
       "source": "/free-qr-code-generator/:path*",
       "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator/:path*"
-    },
-    {
-      "source": "/_next/:path*",
-      "destination": "https://free-qr-code-generator-app.vercel.app/_next/:path*"
     }
   ]
 }
