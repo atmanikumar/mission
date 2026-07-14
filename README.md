@@ -22,11 +22,11 @@ npm run preview
 
 ## Path forwarding (Vercel)
 
-Configured in `vercel.json` as external rewrites:
+Configured in `vercel.json` as redirects (rewrites alone break SPA assets under a subpath):
 
 | Path | Destination |
 |------|-------------|
 | `/thirukkural` | https://tirukkural.vercel.app/ |
-| `/free-qr-code-generator` | https://free-qr-code-generator-app.vercel.app/ |
+| `/free-qr-code-generator` | https://free-qr-code-generator-app.vercel.app/free-qr-code-generator |
 
 Subpaths under each prefix are forwarded as well.
