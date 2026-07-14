@@ -1,25 +1,25 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
+  "rewrites": [
     {
       "source": "/thirukkural",
-      "destination": "https://tirukkural.vercel.app/",
-      "permanent": false
+      "destination": "https://tirukkural.vercel.app/"
     },
     {
       "source": "/thirukkural/:path*",
-      "destination": "https://tirukkural.vercel.app/:path*",
-      "permanent": false
+      "destination": "https://tirukkural.vercel.app/:path*"
     },
     {
       "source": "/free-qr-code-generator",
-      "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator",
-      "permanent": false
+      "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator"
     },
     {
       "source": "/free-qr-code-generator/:path*",
-      "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator/:path*",
-      "permanent": false
+      "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://free-qr-code-generator-app.vercel.app/_next/:path*"
     }
   ]
 }

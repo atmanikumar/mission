@@ -22,11 +22,11 @@ npm run preview
 
 ## Path forwarding (Vercel)
 
-Configured in `vercel.json` as redirects (rewrites alone break SPA assets under a subpath):
+Configured in `vercel.json` as **rewrites** so the browser URL stays on `kmdigits.com`:
 
 | Path | Destination |
 |------|-------------|
 | `/thirukkural` | https://tirukkural.vercel.app/ |
 | `/free-qr-code-generator` | https://free-qr-code-generator-app.vercel.app/free-qr-code-generator |
 
-Subpaths under each prefix are forwarded as well.
+Thirukkural is built with an absolute asset base + router basename so JS/CSS still load from its origin. QR app `/_next` assets are also rewritten.
