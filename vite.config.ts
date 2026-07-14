@@ -41,6 +41,11 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        // Let Vercel redirects handle these paths instead of SPA shell fallback.
+        navigateFallbackDenylist: [
+          /^\/thirukkural(?:\/|$)/,
+          /^\/free-qr-code-generator(?:\/|$)/,
+        ],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
