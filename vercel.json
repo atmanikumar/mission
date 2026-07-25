@@ -19,11 +19,11 @@
     },
     {
       "source": "/calculator",
-      "destination": "https://omni-calculator.vercel.app/calculator"
+      "destination": "https://calculator-xi-one-56.vercel.app/calculator"
     },
     {
       "source": "/calculator/:path*",
-      "destination": "https://omni-calculator.vercel.app/calculator/:path*"
+      "destination": "https://calculator-xi-one-56.vercel.app/calculator/:path*"
     },
     {
       "source": "/_next/:path*",
