@@ -45,6 +45,7 @@ export default defineConfig({
         navigateFallbackDenylist: [
           /^\/thirukkural(?:\/|$)/,
           /^\/free-qr-code-generator(?:\/|$)/,
+          /^\/calculator(?:\/|$)/,
         ],
         runtimeCaching: [
           {

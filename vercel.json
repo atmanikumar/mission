@@ -18,6 +18,14 @@
       "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator/:path*"
     },
     {
+      "source": "/calculator",
+      "destination": "https://omni-calculator.vercel.app/calculator"
+    },
+    {
+      "source": "/calculator/:path*",
+      "destination": "https://omni-calculator.vercel.app/calculator/:path*"
+    },
+    {
       "source": "/_next/:path*",
       "destination": "https://free-qr-code-generator-app.vercel.app/_next/:path*"
     }

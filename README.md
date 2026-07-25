@@ -28,5 +28,6 @@ Configured in `vercel.json` as **rewrites** so the browser URL stays on `kmdigit
 |------|-------------|
 | `/thirukkural` | https://tirukkural.vercel.app/ |
 | `/free-qr-code-generator` | https://free-qr-code-generator-app.vercel.app/free-qr-code-generator |
+| `/calculator` | https://omni-calculator.vercel.app/calculator |
 
-Both apps use absolute production asset origins so JS/CSS load from their Vercel hosts while the browser URL stays on `kmdigits.com`.
+These apps use absolute production asset origins so JS/CSS load from their Vercel hosts while the browser URL stays on `kmdigits.com`.
