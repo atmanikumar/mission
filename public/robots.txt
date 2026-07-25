@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kmdigits.com/sitemap.xml
+Sitemap: https://www.kmdigits.com/sitemap.xml

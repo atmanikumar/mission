@@ -14,6 +14,14 @@
       "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator"
     },
     {
+      "source": "/free-qr-code-generator/sitemap.xml",
+      "destination": "https://free-qr-code-generator-app.vercel.app/sitemap.xml"
+    },
+    {
+      "source": "/free-qr-code-generator/robots.txt",
+      "destination": "https://free-qr-code-generator-app.vercel.app/robots.txt"
+    },
+    {
       "source": "/free-qr-code-generator/:path*",
       "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator/:path*"
     },

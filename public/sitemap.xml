@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kmdigits.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.kmdigits.com/sitemap-pages.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.kmdigits.com/thirukkural/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.kmdigits.com/free-qr-code-generator/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.kmdigits.com/calculator/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
