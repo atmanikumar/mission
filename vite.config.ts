@@ -46,6 +46,7 @@ export default defineConfig({
           /^\/thirukkural(?:\/|$)/,
           /^\/free-qr-code-generator(?:\/|$)/,
           /^\/calculator(?:\/|$)/,
+          /^\/docscan(?:\/|$)/,
         ],
         runtimeCaching: [
           {

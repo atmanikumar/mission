@@ -29,6 +29,7 @@ Configured in `vercel.json` as **rewrites** so the browser URL stays on `kmdigit
 | `/thirukkural` | https://tirukkural.vercel.app/ |
 | `/free-qr-code-generator` | https://free-qr-code-generator-app.vercel.app/free-qr-code-generator |
 | `/calculator` | https://calculator-xi-one-56.vercel.app/calculator |
+| `/docscan` | https://docscan-virid.vercel.app/docscan |
 
 These apps use absolute production asset origins so JS/CSS load from their Vercel hosts while the browser URL stays on `kmdigits.com`.
 
@@ -42,5 +43,6 @@ These apps use absolute production asset origins so JS/CSS load from their Verce
 | `/thirukkural/sitemap.xml` | Thirukkural chapters |
 | `/free-qr-code-generator/sitemap.xml` | QR generator types |
 | `/calculator/sitemap.xml` | Calculator tools |
+| `/docscan/sitemap.xml` | DocScan OCR & converters |
 
 `robots.txt` advertises the index for crawlers.

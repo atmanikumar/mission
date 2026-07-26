@@ -40,6 +40,14 @@ export const HUB_APPS: HubApp[] = [
     appleTouchIcon:
       "https://calculator-xi-one-56.vercel.app/calculator/apple-icon",
   },
+  {
+    id: "docscan",
+    path: "/docscan",
+    origin: "https://docscan-virid.vercel.app",
+    title: "DocScan",
+    favicon: "https://docscan-virid.vercel.app/docscan/icon",
+    appleTouchIcon: "https://docscan-virid.vercel.app/docscan/apple-icon",
+  },
 ];
 
 export const HUB_FAVICON = "/favicon.svg";

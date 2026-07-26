@@ -66,6 +66,26 @@
       "destination": "https://calculator-xi-one-56.vercel.app/calculator/:path*"
     },
     {
+      "source": "/docscan",
+      "destination": "https://docscan-virid.vercel.app/docscan"
+    },
+    {
+      "source": "/docscan/icon",
+      "destination": "https://docscan-virid.vercel.app/docscan/icon"
+    },
+    {
+      "source": "/docscan/apple-icon",
+      "destination": "https://docscan-virid.vercel.app/docscan/apple-icon"
+    },
+    {
+      "source": "/docscan/favicon.ico",
+      "destination": "https://docscan-virid.vercel.app/docscan/icon"
+    },
+    {
+      "source": "/docscan/:path*",
+      "destination": "https://docscan-virid.vercel.app/docscan/:path*"
+    },
+    {
       "source": "/_next/:path*",
       "destination": "https://free-qr-code-generator-app.vercel.app/_next/:path*"
     }
