@@ -6,6 +6,14 @@
       "destination": "https://tirukkural.vercel.app/"
     },
     {
+      "source": "/thirukkural/favicon.ico",
+      "destination": "https://tirukkural.vercel.app/favicon.ico"
+    },
+    {
+      "source": "/thirukkural/favicon.png",
+      "destination": "https://tirukkural.vercel.app/favicon.png"
+    },
+    {
       "source": "/thirukkural/:path*",
       "destination": "https://tirukkural.vercel.app/:path*"
     },
@@ -22,12 +30,36 @@
       "destination": "https://free-qr-code-generator-app.vercel.app/robots.txt"
     },
     {
+      "source": "/free-qr-code-generator/icon.png",
+      "destination": "https://free-qr-code-generator-app.vercel.app/icon.png"
+    },
+    {
+      "source": "/free-qr-code-generator/favicon.ico",
+      "destination": "https://free-qr-code-generator-app.vercel.app/icon.png"
+    },
+    {
+      "source": "/free-qr-code-generator/manifest.json",
+      "destination": "https://free-qr-code-generator-app.vercel.app/manifest.json"
+    },
+    {
       "source": "/free-qr-code-generator/:path*",
       "destination": "https://free-qr-code-generator-app.vercel.app/free-qr-code-generator/:path*"
     },
     {
       "source": "/calculator",
       "destination": "https://calculator-xi-one-56.vercel.app/calculator"
+    },
+    {
+      "source": "/calculator/icon",
+      "destination": "https://calculator-xi-one-56.vercel.app/calculator/icon"
+    },
+    {
+      "source": "/calculator/apple-icon",
+      "destination": "https://calculator-xi-one-56.vercel.app/calculator/apple-icon"
+    },
+    {
+      "source": "/calculator/favicon.ico",
+      "destination": "https://calculator-xi-one-56.vercel.app/calculator/icon"
     },
     {
       "source": "/calculator/:path*",

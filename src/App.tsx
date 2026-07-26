@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { SiteFooter } from "./components/SiteFooter";
+import { HUB_FAVICON } from "./config/apps";
 
 const title = "KMDIGITS — Useful software, no signup";
 const description =
@@ -12,6 +13,7 @@ export default function App() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href="https://kmdigits.com/" />
+        <link rel="icon" type="image/svg+xml" href={HUB_FAVICON} sizes="any" />
       </Helmet>
 
       <div className="flex min-h-dvh flex-col bg-ink text-chalk">
