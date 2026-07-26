@@ -119,9 +119,10 @@ Do **not** iframe apps. Hub uses Vercel **rewrites** only.
 
 ---
 
-## 6. Branding + analytics footer
+## 6. Branding + sticky footer + analytics
 
 - Footer / copyright: **KMDIGITS** (hub) / **OKM DIGITAL WORKS** where existing apps use it — match sibling, do not invent a third brand string.
+- Sticky footer in the **shared shell** (`PageBackground` / `AppLayout`): `minHeight: 100dvh` flex column + footer `mt: 'auto'` / `mt-auto`. See skill §4 — every page, including short ones.
 - `@vercel/analytics` once at root (`/next` or `/react` import by stack).
 - Enable Analytics in the Vercel project dashboard.
 
@@ -137,6 +138,7 @@ Do **not** iframe apps. Hub uses Vercel **rewrites** only.
 - [ ] Google verify file live under hub URL
 - [ ] Live smoke: `www.kmdigits.com/{path}` returns 200; JS/CSS from child origin 200; favicon 200
 - [ ] Tab icon is the **app** icon, not the hub favicon
+- [ ] Footer pinned to viewport bottom on a short page (empty search / sparse home)
 
 ---
 

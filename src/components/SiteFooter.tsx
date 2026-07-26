@@ -2,7 +2,7 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="shrink-0 px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4 text-center">
+    <footer className="mt-auto shrink-0 px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4 text-center">
       <a
         href="https://kmdigits.com"
         className="font-display animate-fade text-sm text-hush transition-colors duration-300 hover:text-mist"

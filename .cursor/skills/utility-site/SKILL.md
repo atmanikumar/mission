@@ -43,6 +43,7 @@ When the user adds a **new** utility under `kmdigits.com`:
 ### New Page / Feature Checklist
 
 - [ ] Unique `<h1>`, `<main>`, and semantic `<footer>` structure
+- [ ] Sticky footer via shared shell (`AppLayout` / `PageBackground`) — bottom on short pages (§4)
 - [ ] Title, description, canonical, OpenGraph, and Twitter cards on every page
 - [ ] Canonicals/sitemaps use hub host when the app is embedded
 - [ ] Page added to sitemap; robots.txt/rules updated if needed
@@ -170,16 +171,47 @@ Reference: [React / CRA quickstart](https://vercel.com/docs/analytics/quickstart
 
 ---
 
-## 4. Responsive Copyright Footer
+## 4. Sticky Copyright Footer (every page)
 
-The copyright footer resides at the bottom of the landing layout, styled with standard CSS glassmorphism properties:
-- **Brand**: Match the sibling app — hub uses **KMDIGITS**; some tools still say **OKM DIGITAL WORKS**. Do not invent a third string.
-- **Dynamic Calendar Calculation**: Excludes hardcoded ranges, rendering copyright years dynamically:
-  `© {new Date().getFullYear()} KMDIGITS. All Rights Reserved.`
-- **Styling Specs**:
-  - `backdropFilter: 'blur(8px)'` and transparent background overlay for premium, modern aesthetics.
-  - Border separator aligned with CSS dividers matching active light/dark borders.
-  - Flex layout pushes the footer automatically to the screen bottom (`mt: 'auto'`) on short viewports.
+The footer must sit at the **bottom of the viewport on short pages** and after content on long pages. Never leave it floating mid-screen under short content (e.g. Search with no results).
+
+**Brand**: Match the sibling — hub uses **KMDIGITS**; tools often say **OKM DIGITAL WORKS**. Do not invent a third string.  
+**Year**: `© {new Date().getFullYear()} …` — never hardcode.
+
+### Canonical shell pattern (required)
+
+Put the footer in the **shared shell once** (`AppLayout` / `PageBackground`), not duplicated per page.
+
+**Vite (Kural `AppLayout`)** — scrollable main, fill short pages:
+
+```tsx
+<main className="relative flex min-h-0 flex-1 flex-col overflow-y-auto">
+  <div className="flex min-h-full flex-1 flex-col">
+    <div className="flex min-h-0 flex-1 flex-col">{children}</div>
+    <SiteFooter /> {/* shrink-0 + mt-auto */}
+  </div>
+</main>
+```
+
+**Next.js + MUI (`PageBackground`)** — Calculator / Pulsar / DocScan:
+
+```tsx
+<Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}>
+  <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
+    {children}
+  </Box>
+  <SiteFooter /> {/* mt: 'auto', flexShrink: 0 */}
+</Box>
+```
+
+**Hub landing (Mission)**: outer `flex min-h-dvh flex-col` → `<main className="flex-1">` → `<SiteFooter className="mt-auto shrink-0" />`.
+
+### Rules
+
+- Prefer `minHeight: 100dvh` (or `min-h-dvh` / `min-h-full` inside a flex-1 main) over bare `100vh`.
+- Footer: `mt-auto` / `mt: 'auto'` + `shrink-0` / `flexShrink: 0`.
+- Include safe-area bottom padding where the device has a home indicator.
+- Do **not** render a second page-level footer if the shell already has one.
 
 ---
 
